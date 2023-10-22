@@ -5,9 +5,9 @@
         </h2>
     </x-slot>
 <!-- 
-Nama    : Dimas Dwi Kurniawan
-NIM     : 6706220041
-Kelas   : D3IF-4603 
+// Nama    : Dimas Dwi Kurniawan
+// NIM     : 6706220041
+// Kelas   : 4603 
 -->
 @section('content')
     <div class="py-12">

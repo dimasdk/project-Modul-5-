@@ -11,15 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-       
-
-        Schema::create('koleksi', function (Blueprint $table) {
-            $table->id();
-            $table->string('namaKoleksi', 100);
-            $table->tinyInteger('jenisKoleksi');
-            $table->timestamps();
-            $table->integer('jumlahKoleksi');
-            
+        Schema::table('koleksi', function (Blueprint $table) {
+            $table->integer('jumlahKeluar');
+            $table->integer('jumlahSisa');
         });
     }
 
@@ -28,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::table('koleksi', function (Blueprint $table) {
+            //
+        });
     }
 };

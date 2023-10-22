@@ -5,11 +5,10 @@
         </h2>
     </x-slot>
 <!--  
-| Nama  : Dimas Dwi Kurniawan
-| NIM   : 6706220041
-| Kelas : D3IF-4603 
+|// Nama    : Dimas Dwi Kurniawan
+// NIM     : 6706220041
+// Kelas   : 4603
 -->
-@section('content')
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -18,6 +17,8 @@
                     <p>Nama Koleksi: {{ $koleksi->namaKoleksi }}</p>
                     <p>Jenis Koleksi: {{ ($koleksi->jenisKoleksi == 1) ? 'Buku' : (($koleksi->jenisKoleksi == 2) ? 'Majalah' : 'Cakram Digital') }}</p>
                     <p>Jumlah Koleksi: {{ $koleksi->jumlahKoleksi }}</p>
+                    <p>Jumlah Keluar: {{ $koleksi->jumlahKeluar }}</p>
+                    <p>Jumlah Sisa: {{ $koleksi->jumlahSisa }}</p>
                     <p>Ditambahkan: {{ $koleksi->created_at }}</p>
                 </div>
             </div>
@@ -28,5 +29,4 @@
             window.history.back();
         }
     </script>
-@endsection
 </x-app-layout>
